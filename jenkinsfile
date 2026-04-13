@@ -1,0 +1,20 @@
+	pipeline{
+    agent any
+    stages{
+        stage('build'){
+            steps{
+                echo 'Hemant sambare from stage 1'
+            }
+        }
+        stage('Test'){
+            steps{
+                echo 'Test stage'
+            }
+        }
+        stage('Deployment'){
+            steps{
+                echo 'stage Deployment'
+            }
+        }
+    }
+}
