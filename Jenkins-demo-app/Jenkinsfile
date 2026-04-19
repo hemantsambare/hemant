@@ -41,7 +41,7 @@ pipeline {
     post {
         success {
             echo 'Pipeline Succeeded.'
-            mail to: 'bhavya.sachdeva.58@gmail.com', // <--- REPLACE THIS EMAIL
+            mail to: 'hemantsambare38@gmail.com', // <--- REPLACE THIS EMAIL
                  subject: "SUCCESS: Build ${currentBuild.fullDisplayName}",
                  body: """
                  The build completed successfully.
@@ -53,7 +53,7 @@ pipeline {
         }
         failure {
             echo 'Pipeline Failed.'
-            mail to: 'bhavya.sachdeva.58@gmail.com', // <--- REPLACE THIS EMAIL
+            mail to: 'hemantsambare38@gmail.com', // <--- REPLACE THIS EMAIL
                  subject: "FAILURE: Build ${currentBuild.fullDisplayName}",
                  body: """
                  The build failed. Please check the logs.
